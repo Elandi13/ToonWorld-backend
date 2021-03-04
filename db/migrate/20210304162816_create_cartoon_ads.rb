@@ -1,10 +1,11 @@
 class CreateCartoonAds < ActiveRecord::Migration[6.1]
   def change
     create_table :cartoon_ads do |t|
-      t.belongs_to :cartoon, null: false, foreign_key: true
-      t.belongs_to :ad, null: false, foreign_key: true
+      t.integer :cartoon_id
+      t.integer :ad_id
 
       t.timestamps
     end
   end
 end
+

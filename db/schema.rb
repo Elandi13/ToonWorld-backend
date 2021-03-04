@@ -10,10 +10,43 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_03_04_150845) do
+ActiveRecord::Schema.define(version: 2021_03_04_162816) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "ads", force: :cascade do |t|
+    t.string "title"
+    t.string "clip"
+    t.integer "year"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "cartoon_ads", force: :cascade do |t|
+    t.integer "cartoon_id"
+    t.integer "ad_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "cartoons", force: :cascade do |t|
+    t.string "tv_show"
+    t.string "title"
+    t.integer "year"
+    t.integer "episode"
+    t.string "description"
+    t.string "clip"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "user_cartoons", force: :cascade do |t|
+    t.integer "user_id"
+    t.integer "cartoon_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "username"
