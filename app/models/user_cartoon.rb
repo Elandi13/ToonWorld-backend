@@ -1,0 +1,2 @@
+class UserCartoon < ApplicationRecord
+end

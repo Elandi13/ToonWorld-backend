@@ -1,0 +1,2 @@
+class CartoonAdsController < ApplicationController
+end
