@@ -37,6 +37,8 @@ ActiveRecord::Schema.define(version: 2021_03_04_162816) do
     t.integer "episode"
     t.string "description"
     t.string "clip"
+    t.string "image"
+    t.string "era"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

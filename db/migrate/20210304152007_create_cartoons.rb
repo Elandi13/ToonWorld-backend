@@ -7,6 +7,8 @@ class CreateCartoons < ActiveRecord::Migration[6.1]
       t.integer :episode
       t.string :description
       t.string :clip
+      t.string :image
+      t.string :era
 
       t.timestamps
     end
