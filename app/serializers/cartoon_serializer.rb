@@ -1,3 +1,3 @@
 class CartoonSerializer < ActiveModel::Serializer
-  attributes :id, :title, :year, :episode, :description, :clip
+  attributes :id, :title, :year, :episode, :description, :clip, :image, :era
 end
