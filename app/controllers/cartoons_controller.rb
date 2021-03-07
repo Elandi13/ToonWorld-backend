@@ -15,11 +15,11 @@ class CartoonsController < ApplicationController
 
     end
 
-    # def update 
-    #     cartoon = Cartoon.find(params[:id])
-    #            cartoon.update(cartoon_params)
-    #            render json: cartoon
-    # end
+    def update 
+        cartoon = Cartoon.find(params[:id])
+               cartoon.update(cartoon_params)
+               render json: cartoon
+    end
 
     def show 
         cartoon = Cartoon.find(params[:id])
@@ -27,19 +27,19 @@ class CartoonsController < ApplicationController
         render json: cartoon
     end
 
-    # def destroy
-    #     cartoon_to_delete = Cartoon.find(params[:id])
-    #     cartoon_to_delete.destroy
+    def destroy
+        cartoon_to_delete = Cartoon.find(params[:id])
+        cartoon_to_delete.destroy
 
-    #     render json: cartoon_to_delete
-    # end
+        render json: cartoon_to_delete
+    end
 
 
 
     private 
 
     def cartoon_params
-        params.require(:cartoon).permit(:tv_show, :title, :year, :episode, :description, :clip, :image, :era)
+        params.require(:cartoon).permit(:id, :tv_show, :title, :year, :episode, :description, :clip, :image, :era)
 
     end
 end
