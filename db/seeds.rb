@@ -112,7 +112,10 @@ User.reset_pk_sequence
         
     )
 
-    
+    fav1 = UserCartoon.create(
+        user_id: 1, 
+        cartoon_id: 1
+    )
 
 ###need to connect them with favorites
 

@@ -16,5 +16,9 @@ Rails.application.routes.draw do
   patch "/cartoons/:id", to: "cartoons#update"
   delete "/cartoons/:id", to: "cartoons#destroy"
 
+  get "/user_cartoons", to: "user_cartoons#index"
+  post "/user_cartoons", to: "user_cartoons#create"
+  delete "/user_cartoons", to: "user_cartoons#destroy"
+
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end

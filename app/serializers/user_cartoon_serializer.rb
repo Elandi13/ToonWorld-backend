@@ -1,3 +1,3 @@
 class Serializer < ActiveModel::Serializer
-  attributes :id, :belongs_to, :belongs_to
+  attributes :id, :user_id, :cartoon_id
 end
