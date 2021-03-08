@@ -2,7 +2,13 @@ Rails.application.routes.draw do
   # resources :cartoon_ads
   # resources :ads
   resources :user_cartoons
-  resources :users
+  # resources :users
+
+  # get "/users", to: "users#index" 
+  post "/login", to: "users#login"
+  # get "/users/:id", to: "users#show"
+
+
 
   get "/cartoons", to:"cartoons#index"
   post "/cartoons", to:"cartoons#create"

@@ -7,6 +7,9 @@ CartoonAd.reset_pk_sequence
 Ad.destroy_all
 Ad.reset_pk_sequence
 
+User.destroy_all
+User.reset_pk_sequence
+
 
 # This file should contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
@@ -17,11 +20,17 @@ Ad.reset_pk_sequence
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-users = [
-    {username: "Elvis", password: 0000}
-]
+# users = [
+#     {username: "Elvis", 
+#     password_digest: "abc123"}
+# ]
 
-users.each{|user| User.create(user)}
+# users.each{|user| User.create(user)}
+
+    User.create(
+        username: "Elvis",
+        password: "abc123"
+    )
 
 
 
