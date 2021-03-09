@@ -4,8 +4,8 @@ Rails.application.routes.draw do
   resources :user_cartoons
   # resources :users
 
-  # get "/users", to: "users#index" 
   post "/login", to: "users#login"
+  get "/me", to: "users#show" 
   # get "/users/:id", to: "users#show"
 
 
