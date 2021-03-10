@@ -63,7 +63,7 @@ User.reset_pk_sequence
         episode: 40, 
         description:"Johnny accidentally swallows a `diamond' when he falls for a beautiful thief", 
         clip:"https://www.youtube.com/embed/Uqw4w7iyEss",
-        image: "https://i.pinimg.com/originals/da/b0/ed/dab0ed566d2a2dd1302a1d313b6f7f41.png",
+        image: "https://images2.minutemediacdn.com/image/upload/c_crop,h_843,w_1500,x_0,y_67/f_auto,q_auto,w_1100/v1555006112/shape/mentalfloss/johnny_bravo_hed.jpg",
         era:"1990s"
         )
 

@@ -16,6 +16,13 @@ class UserCartoonsController < ApplicationController
 
     end
 
+    def destroy
+        user_cartoon_to_delete = UserCartoon.find(params[:id])
+        user_cartoon_to_delete.destroy
+
+        render json: user_cartoon_to_delete
+    end
+
     private
 
     def user_cartoon_params
