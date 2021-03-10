@@ -1,5 +1,5 @@
 class CartoonAdSerializer < ActiveModel::Serializer
-  attributes :id
-  has_one :cartoon
-  has_one :ad
+  attributes :id, :cartoon_id, :ad_id
+  belongs_to :user
+  belongs_to :cartoon
 end

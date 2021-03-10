@@ -6,9 +6,13 @@ Rails.application.routes.draw do
 
   post "/login", to: "users#login"
   get "/me", to: "users#show" 
+  patch "me", to: "user#update"
   # get "/users/:id", to: "users#show"
 
-
+  post "/login", to: "users#login"
+  get "/me", to: "users#show"
+  # post "/signup", to: "users#signup"
+  # patch "/me", to: "users#update"
 
   get "/cartoons", to:"cartoons#index"
   post "/cartoons", to:"cartoons#create"
@@ -20,5 +24,11 @@ Rails.application.routes.draw do
   post "/user_cartoons", to: "user_cartoons#create"
   delete "/user_cartoons", to: "user_cartoons#destroy"
 
+
+  get "/cartoon_ads", to: "cartoon_ads#index"
+  post "/cartoon_ads", to: "cartoon_ads#create"
+  delete "/cartoon_ads", to: "cartoon_ads#destroy"
+
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
+

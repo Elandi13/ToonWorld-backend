@@ -63,7 +63,7 @@ User.reset_pk_sequence
         episode: 40, 
         description:"Johnny accidentally swallows a `diamond' when he falls for a beautiful thief", 
         clip:"https://www.youtube.com/embed/Uqw4w7iyEss",
-        image: "https://i.pinimg.com/originals/da/b0/ed/dab0ed566d2a2dd1302a1d313b6f7f41.png",
+        image: "https://images2.minutemediacdn.com/image/upload/c_crop,h_843,w_1500,x_0,y_67/f_auto,q_auto,w_1100/v1555006112/shape/mentalfloss/johnny_bravo_hed.jpg",
         era:"1990s"
         )
 
@@ -131,38 +131,84 @@ User.reset_pk_sequence
 ####Ads Start Underneath 
 
 
-    ad1 = Ad.create(title:"Zoobooks", clip:"https://www.youtube.com/watch?v=S8EvnM2XUTI&ab_channel=BravaCentauri" , year:1994)
+    ad1 = Ad.create(
+        title:"Zoobooks", 
+        clip:"https://www.youtube.com/embed/S8EvnM2XUTI", 
+        year:1994)
 
-    ad2 = Ad.create(title:"Pokemon", clip: "https://www.youtube.com/watch?v=5tTc8__lXkM&ab_channel=Someguy12121", year:1996)
+    ad2 = Ad.create(
+        title:"Pokemon", 
+        clip: "https://www.youtube.com/embed/5tTc8__lXkM", 
+        year:1996)
 
-    ad3 = Ad.create(title:"Socker Boppers",clip: "https://www.youtube.com/watch?v=bzBhXz1bosk&ab_channel=Vincent89", year: 1997 )
+    ad3 = Ad.create(
+        title:"Socker Boppers",
+        clip: "https://www.youtube.com/embed/bzBhXz1bosk", 
+        year: 1997 )
 
-    ad4 = Ad.create(title:"ZooPals",clip:"https://www.youtube.com/watch?v=7gIrHwoGDm0&ab_channel=RidiculousEntertainment" , year: 2000 )
-    ad5 = Ad.create(title:"Free Credit Report",clip:"https://www.youtube.com/watch?v=Wm7lhFkEijY&ab_channel=ErikETC" , year: 2006 )
-    ad6 = Ad.create(title:"ShamWow",clip:"https://www.youtube.com/watch?v=1Q39yGLPkMY&ab_channel=therealvinceoffer" , year: 2006)
-    ad7 = Ad.create(title:"JG Wentworth",clip:"https://www.youtube.com/watch?v=HX0fIi3H-es&ab_channel=PrzFtr" , year: 2004 )
-    ad8 = Ad.create(title:" OxiClean",clip:"https://www.youtube.com/watch?v=0nqzBsWFESA&ab_channel=BillyMayscommercials%21" , year: 2002 )
-    ad9 = Ad.create(title:"Hess Truck", clip:"https://www.youtube.com/watch?v=TO68eFU5Otk&ab_channel=iRememberThat" , year: 2002)
-    ad10 = Ad.create(title:"1-800-Contacts ", clip: "https://www.youtube.com/watch?v=vy6seqOQIVQ&ab_channel=DrRockso1987", year: 2008 )
-    ad11 = Ad.create(title:"2000", clip:"https://www.youtube.com/watch?v=OFQwQTCZZeQ&ab_channel=LaronDSS" , year: 2000)
-    ad12 = Ad.create(title:"Lost Dog", clip:"https://www.youtube.com/watch?v=TPKgC8KPBMg&ab_channel=PaulEide", year: 2015)
-    ad13 = Ad.create(title:"BrotherHood", clip:"https://www.youtube.com/watch?v=eJucRz8kYo0&ab_channel=PegaseBuzz", year: 2013)
-    
-    ad14 =Ad.create(title:"Subway", clip:"https://www.youtube.com/watch?v=MJF3mknSTlo&ab_channel=CommercialsinUSA ", year:2004)
-    ad15 =Ad.create(title:"Chips-Ahoy ", clip:"https://www.youtube.com/watch?v=unrgBTWjM_U&ab_channel=LooseMooseProds ", year: 2005)
-    ad16 =Ad.create(title:"MTV 2005", clip:"https://www.youtube.com/watch?v=YEyY3774LP0&ab_channel=DavidWard", year: 2005)
+    ad4 = Ad.create(
+        title:"ZooPals",
+        clip:"https://www.youtube.com/embed/7gIrHwoGDm0", 
+        year: 2000 )
+
+    ad5 = Ad.create(
+        title:"Free Credit Report",
+        clip:"https://www.youtube.com/embed/Wm7lhFkEijY", 
+        year: 2006 )
+
+    ad6 = Ad.create(
+        title:"ShamWow",
+        clip:"https://www.youtube.com/embed/1Q39yGLPkMY", 
+        year: 2006)
+
+    ad7 = Ad.create(
+        title:"JG Wentworth",
+        clip:"https://www.youtube.com/embed/HX0fIi3H-es", 
+        year: 2004 )
+
+    ad8 = Ad.create(
+        title:" OxiClean",
+        clip:"https://www.youtube.com/embed/0nqzBsWFESA", 
+        year: 2002 )
+
+    ad9 = Ad.create(
+        title:"Hess Truck", 
+        clip:"https://www.youtube.com/embed/TO68eFU5Otk" , 
+        year: 2002)
+
+    ad10 = Ad.create(
+        title:"1-800-Contacts ", 
+        clip:"https://www.youtube.com/embed/vy6seqOQIVQ", 
+        year: 2008 )
+
+    ad11 = Ad.create(
+        title:"2000", 
+        clip:"https://www.youtube.com/embed/OFQwQTCZZeQ", 
+        year: 2000)
+
+    ad12 =Ad.create(
+        title:"Subway", 
+        clip:"https://www.youtube.com/embed/MJF3mknSTlo",
+         year:2004)
+
+    ad13 =Ad.create(
+        title:"Chips-Ahoy", 
+        clip: "https://www.youtube.com/embed/unrgBTWjM_U", 
+        year: 2005)
+
+    ad14 =Ad.create(
+        title:"MTV 2005", 
+        clip:"https://www.youtube.com/embed/YEyY3774LP0", 
+        year: 2005)
     
     
 
 ##########CartoonAds
 
-cartoon_ads = [ 
+spongeAd = CartoonAd.create(cartoon_id: 1, ad_id: 8)
+spongeAd2 = CartoonAd.create(cartoon_id: 1, ad_id: 9)
 
-    {cartoon_id: cartoon6.id, ad_id: ad1.id}
-]
-
-
-cartoon_ads.each {|cartoon_ad| CartoonAd.create(cartoon_ad)}
+# cartoon_ads.each {|cartoon_ad| CartoonAd.create(cartoon_ad)}
 
 
 
