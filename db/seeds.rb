@@ -79,7 +79,7 @@ User.reset_pk_sequence
         clip:"https://www.youtube.com/embed/V1508wboZXk",
         image: "https://cdn.arstechnica.net/wp-content/uploads/2020/11/animaniacs2020-800x450.jpg",
         era:"1990s",
-        background: "https://media.newyorker.com/photos/5fe21d00cf789a91f3b69923/master/pass/Jackson-Animaniacs.jpg"
+        background: "https://i.ytimg.com/vi/CWnWwN1z_UM/maxresdefault.jpg"
         )
 
     cartoon5 = Cartoon.create(
@@ -115,7 +115,7 @@ User.reset_pk_sequence
         clip: "https://www.youtube.com/embed/lvJj-kpmsdM", 
         image: "https://images2.minutemediacdn.com/image/upload/c_fill,g_auto,h_1248,w_2220/v1555382760/shape/mentalfloss/arnold_primary.jpg?itok=-_lshluG",
         era: "1990s",
-        background: "https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/bf128273611021.5c54ef18dc164.png"
+        background: "https://i.ytimg.com/vi/bwfNUhy9F4M/sddefault.jpg"
         )
 
     cartoon8 = Cartoon.create(
