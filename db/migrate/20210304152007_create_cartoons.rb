@@ -9,6 +9,7 @@ class CreateCartoons < ActiveRecord::Migration[6.1]
       t.string :clip
       t.string :image
       t.string :era
+      t.string :background
 
       t.timestamps
     end

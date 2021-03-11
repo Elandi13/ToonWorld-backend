@@ -39,7 +39,7 @@ class CartoonsController < ApplicationController
     private 
 
     def cartoon_params
-        params.permit(:id, :tv_show, :title, :year, :episode, :description, :clip, :image, :era)
+        params.permit(:id, :tv_show, :title, :year, :episode, :description, :clip, :image, :era, :background)
 
     end
 end

@@ -39,6 +39,7 @@ ActiveRecord::Schema.define(version: 2021_03_04_162816) do
     t.string "clip"
     t.string "image"
     t.string "era"
+    t.string "background"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
