@@ -109,6 +109,11 @@ User.reset_pk_sequence
         clip: "https://www.youtube.com/embed/lvJj-kpmsdM", 
         image: "https://images2.minutemediacdn.com/image/upload/c_fill,g_auto,h_1248,w_2220/v1555382760/shape/mentalfloss/arnold_primary.jpg?itok=-_lshluG",
         era: "1990s"
+
+    # cartoon8 = Cartoon.create(
+    #     tv_show: The Looney Tunes Show,
+    #     clip: "https://www.youtube.com/embed/NYSd2SNfK4k""
+    # )
         
     )
 
